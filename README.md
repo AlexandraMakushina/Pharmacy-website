@@ -1,3 +1,3 @@
 # Pharmacy-website
 
-С любовью, Сашуля. 
+With love, Alex.
