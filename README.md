@@ -1,3 +1,3 @@
 # Pharmacy-website
 
-With love, Alex.
+With love, Alexandra :3
