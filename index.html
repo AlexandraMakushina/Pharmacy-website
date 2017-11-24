@@ -1,6 +1,6 @@
-< !DOCTYPE html >
-<html>
-	<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 	   <meta charset="utf-8">
 	   <title>название страницы</title>
 			<style>
@@ -9,11 +9,23 @@
 					font-family: Monaco, Courier, monospace;
 					color: #618ad2;
 				    }
+
+				 table {
+					 width: 100%; /* Ширина таблицы */
+					 border-spacing: 0; /* Расстояние между ячейками */
+				 }
+				tr:nth-child(2n) {
+					background: #f0f0f0; /* Цвет фона */
+				}
+				tr:nth-child(1) {
+					background: #666; /* Цвет фона */
+					color: #fff; /* Цвет текста */
+				}
 		    </style><!-- мы можем применять стили внутри html-->
 		<link href="style.css" rel="stylesheet"><!-- мы подключаем стили с файла CSS нашего -->
 		<meta name="keywords" content="мета-теги, поисковые системы, ключевые слова"><!-- помогает работать поисковикам, слова из статьи-->
 		<meta name="description" content="Не пересказать"><!-- не понятно ли важен для ранжирования ли тег, но краткий обзор страницы-->
-	</head>
+</head>
 	<body>
 		<h1>заголовок</h1>
 		    <ul>
@@ -49,7 +61,47 @@
 		  <blockquote>отдельный блок текста, на фоне, можно для выделения цитат</blockquote><!-- <q> и <cite> другие способы выделения, кавычки и ещё-->
 		<img class=photocard src="/assets/course1/keks.jpg"><!-- одиночный тег, для вставки изображения, где класс это вид изображения, а следующий тег это ссылка на него -->
 		<hr><!-- разделитель,горизонтальная линия на всю страницу --> 
-		  <br><!-- перенос --> 
+		  <br><!-- перенос -->
+		<table border="1" cellpadding="5" width="90%" height="130" >
+			<caption>Заголовок таблицы</caption>
+			<tr>
+				<th colspan="2">Название столбец1,растянем ячейку на 2 по горизонтали</th>
+				<th rowspan="2" >Название столбец2,растянем на 2 ячейки,по вертикали</th>
+			</tr>
+			<tr>
+				<td>Строчка1.1</td>
+				<td>Строчка1.2</td>
+			</tr>
+			<form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data"><!-- method="get" ещё можно -->
+				<input type="text" name="search" id="total-field" value="значение по умолчанию" ><!-- индификатор id -->
+				<label for="login-field">Ваш логин</label>
+				<input type="text" name="login" id="login-field">
+				<label for="password-field">Ваш пароль</label>
+				<input type="text" name="password" id="password-field">
+				<input type="submit" value="Войти">
+				<textarea  name="comment" id="comment-field" cols="20" rows="10">Текст комментария</textarea>
+				<input name="subscribe" id="subscribe-field" type="checkbox" checked>
+				<label for="subscribe-field">Подписать вас на рассылку?</label>
+				<input type="radio" name="question-one" value="p">
+				<input type="radio" name="question-one" value="b" checked>
+				<select name="year">
+					<option value="2000">2000 год</option>
+					<option value="2001">2001 год</option>'
+				</select>
+				<select name="days" multiple size="7">
+					<option>Понедельник</option>
+					<option>Вторник</option>
+					<option>Среда</option>
+					<option>Четверг</option>
+					<option>Пятница</option>
+					<option>Суббота</option>
+					<option selected>Воскресенье</option>
+				</select>
+				<input type="file" name="avatar">
+				<input type="hidden" name="account_number" value="15">
+
+			</form>
+		</table>
 		<p style="color: green">текст5 сделали зелеными буквами</p>
 		<pre>
 
