@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
+    <link href="style.css" rel="stylesheet">
+    <link href="page3.css" rel="stylesheet">
+    <link href="page1.css" rel="stylesheet">
+  </head>
+  <body>
+ 
+ 
+  <div id="page1" data-tid="App">  
+     <a href="index.html"><img class="png__start"
+                src="./imgs/StartGame@2x.png" alt="cards"></a>
+  <div class="name__game">MEMORY GAME</div>
+   
+   <div class="button__game__start" id="button__game__start"  data-tid="NewGame-startGame">Начать игру</div>
+ </div>
+  <div id="page2"  data-tid="Deck">
+    <div class="background">
+      <div class="game-area">
+          <div class="title">
+            <span class="restart" id="restart" data-tid="Menu-newGame">Начать заново</span>
+            <span style="float: right;" data-tid="Menu-scores">Очки: <span id="score">0</span></span>
+          </div>
+          <div class="card" id="card-1" card-id="1" data-tid="Card">
+            <img id="card-img-1" src="./imgs/cards/2C.png">
+          </div>
+          <div class="card" id="card-2" card-id="2" data-tid="Card">
+            <img id="card-img-2" src="./imgs/cards/3C.png">
+          </div>
+          <div class="card" id="card-3" card-id="3" data-tid="Card">
+            <img id="card-img-3" src="./imgs/cards/3C.png">
+          </div>
+          <div class="card" id="card-4" card-id="4" data-tid="Card">
+            <img id="card-img-4" src="./imgs/cards/5C.png">
+          </div>
+          <div class="card" id="card-5" card-id="5" data-tid="Card">
+            <img id="card-img-5" src="./imgs/cards/7C.png">
+          </div>
+          <div class="card" id="card-6" card-id="6" data-tid="Card">
+            <img id="card-img-6" src="./imgs/cards/9C.png">
+          </div>
+          <div class="card" id="card-7" card-id="7" data-tid="Card">
+            <img id="card-img-7" src="./imgs/cards/JC.png">
+          </div>
+          <div class="card" id="card-8" card-id="8" data-tid="Card">
+            <img id="card-img-8" src="./imgs/cards/0H.png">
+          </div>
+          <div class="card" id="card-9" card-id="9" data-tid="Card">
+            <img id="card-img-9" src="./imgs/cards/QC.png">
+          </div>
+          <div class="card" id="card-10" card-id="10" data-tid="Card">
+            <img id="card-img-10" src="./imgs/cards/2D.png">
+          </div>
+          <div class="card" id="card-11" card-id="11" data-tid="Card">
+            <img id="card-img-11" src="./imgs/cards/5D.png">
+          </div>
+          <div class="card" id="card-12" card-id="12" data-tid="Card">
+            <img id="card-img-12" src="./imgs/cards/3D.png">
+          </div>
+          <div class="card" id="card-13" card-id="13" data-tid="Card">
+            <img id="card-img-13" src="./imgs/cards/5D.png">
+          </div>
+          <div class="card" id="card-14" card-id="14" data-tid="Card">
+            <img id="card-img-14" src="./imgs/cards/7D.png">
+          </div>
+          <div class="card" id="card-15" card-id="15" data-tid="Card">
+            <img id="card-img-15" src="./imgs/cards/9D.png">
+          </div>
+          <div class="card" id="card-16" card-id="16" data-tid="Card">
+            <img id="card-img-16" src="./imgs/cards/JH.png">
+          </div>
+          <div class="card" id="card-17" card-id="17" data-tid="Card">
+            <img id="card-img-17" src="./imgs/cards/QH.png">
+          </div>
+          <div class="card" id="card-18" card-id="18" data-tid="Card">
+            <img id="card-img-18" src="./imgs/cards/KD.png">
+          </div>
+      </div>
+    </div>
+    </div>
+  <div id="page3"  data-tid="App">
+        <a href="index.html"><img class="png__end"
+                src="./imgs/Group 2.png" alt="cards"></a>
+  <div class="result">Поздравляем! <br>
+                  Ваш итоговый счет: <div id="final-score"></div></div>
+   
+   <div class="button__game__end" id="play-again" data-tid="EndGame-retryGame">Ещё раз</div>
+    </div>
+  <script  src="main.js"></script>
+ 
+  </body>
+</html>
